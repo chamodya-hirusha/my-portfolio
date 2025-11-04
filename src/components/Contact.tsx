@@ -6,15 +6,16 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useState, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", url: "https://github.com/hirusha218", color: "hover:text-primary" },
+  { icon: Github, label: "GitHub", url: "https://github.com/chamodya-hirusha", color: "hover:text-primary" },
   { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", color: "hover:text-primary" },
-  { icon: Twitter, label: "Twitter", url: "https://twitter.com/hirusha218", color: "hover:text-accent" },
+  { icon: FaWhatsapp, label: "WhatsApp", url: "https://wa.me/94701529611", color: "hover:text-green-500" },
   { icon: Mail, label: "Email", url: "mailto:chamodyahirusha21@gmail.com", color: "hover:text-secondary" },
 ];
 

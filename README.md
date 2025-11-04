@@ -92,7 +92,7 @@ Output will be in the `dist` folder.
 ## 📬 Contact
 
 📧 Email: **[chamodyahirusha21@gmail.com](mailto:chamodyahirusha21@gmail.com)**
-🌐 GitHub: [https://github.com/hirusha218](https://github.com/hirusha218)
+🌐 GitHub: [https://github.com/hirusha218](https://github.com/chamodya-hirusha)
 🇱🇰 Sri Lanka
 
 ---

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { FaWhatsapp } from "react-icons/fa";
 import { Download, Mail, Github, Linkedin, Twitter } from "lucide-react";
 
 const Hero = () => {
@@ -79,7 +80,7 @@ const Hero = () => {
                 Download CV
               </Button>
               <Button size="lg" className="glass-card glow-border group" asChild>
-                <a href="https://github.com/hirusha218" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/chamodya-hirusha" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                   GitHub Profile
                 </a>
@@ -90,20 +91,21 @@ const Hero = () => {
                   Email Me
                 </a>
               </Button>
-            
+
             </motion.div>
 
             {/* Social row */}
             <div className="flex items-center gap-4 mt-6 justify-center md:justify-start">
-              <a href="https://github.com/hirusha218" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
+              <a href="https://github.com/chamodya-hirusha" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
               <a href="https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com/hirusha218" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-accent/50 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
+              <a
+                href="https://wa.me/94701529611" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
+                <FaWhatsapp className="h-5 w-5" />
+                </a>
             </div>
           </div>
 
@@ -280,7 +282,7 @@ const Hero = () => {
                   }}
                 />
               </svg>
-              </div>
+            </div>
           </motion.div>
 
           {/* Floating geometric shapes */}

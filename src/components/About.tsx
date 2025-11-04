@@ -73,7 +73,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-border/50">
                     <img
-                      src="/WhatsApp_Image_2025-10-09_at_13.36.25_bc6ed6c7-removebg-preview.png"
+                      src="/profile_pic.jpg"
                       alt="Hirusha profile"
                       className="h-full w-full object-contain"
                       onError={(e) => {
@@ -116,7 +116,7 @@ const About = () => {
                 {/* Social Links */}
                 <div className="flex flex-col gap-2">
                   <Button size="sm" className="w-full glass-card glow-border" asChild>
-                    <a href="https://github.com/hirusha218" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/chamodya-hirusha" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" /> GitHub
                     </a>
                   </Button>
