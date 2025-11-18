@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Briefcase, Code2, Award, Github, Linkedin, Mail, CheckCircle, Sparkles, Target, Rocket } from "lucide-react";
+import { FaWhatsapp, FaBullseye, FaRobot, FaRocket, FaWheelchair, FaWrench, FaMobile } from "react-icons/fa";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -53,9 +54,6 @@ const About = () => {
               <h2 className="text-4xl md:text-6xl font-bold mb-4">
                 <span className="gradient-text">About Me</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Crafting digital experiences that make a difference
-              </p>
             </motion.div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-6 rounded-full" />
           </div>
@@ -125,6 +123,11 @@ const About = () => {
                       <Linkedin className="h-4 w-4 mr-2" /> LinkedIn
                     </a>
                   </Button>
+                  <Button size="sm" variant="outline" className="w-full glass-card border-green-500/50 hover:border-green-500" asChild>
+                    <a href="https://wa.me/94701529611" target="_blank" rel="noopener noreferrer">
+                      <FaWhatsapp className="h-4 w-4 mr-2" /> WhatsApp
+                    </a>
+                  </Button>
                   <Button size="sm" variant="ghost" className="w-full glass-card" asChild>
                     <a href="mailto:chamodyahirusha21@gmail.com">
                       <Mail className="h-4 w-4 mr-2" /> Email
@@ -166,24 +169,27 @@ const About = () => {
                 {/* Key Points */}
                 <div className="grid sm:grid-cols-2 gap-4 mt-8">
                   {[
-                    "🎯 Full-stack web & mobile development",
-                    "🤖 AI/ML integration & automation",
-                    "🚀 Performance optimization expert",
-                    "♿ Accessibility-first approach",
-                    "🔧 Clean, maintainable code",
-                    "📱 Cross-platform solutions",
-                  ].map((point, idx) => (
-                    <motion.div
-                      key={point}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={inView ? { opacity: 1, x: 0 } : {}}
-                      transition={{ delay: 0.7 + idx * 0.1 }}
-                      className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-border/50 hover:border-primary/30 hover:bg-primary/5 transition-all"
-                    >
-                      <CheckCircle className="h-5 w-5 text-primary shrink-0" />
-                      <span className="text-sm font-medium">{point}</span>
-                    </motion.div>
-                  ))}
+                    { icon: FaBullseye, text: "Full-stack web & mobile development" },
+                    { icon: FaRobot, text: "AI/ML integration & automation" },
+                    { icon: FaRocket, text: "Performance optimization expert" },
+                    { icon: FaWheelchair, text: "Accessibility-first approach" },
+                    { icon: FaWrench, text: "Clean, maintainable code" },
+                    { icon: FaMobile, text: "Cross-platform solutions" },
+                  ].map((point, idx) => {
+                    const Icon = point.icon;
+                    return (
+                      <motion.div
+                        key={point.text}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={inView ? { opacity: 1, x: 0 } : {}}
+                        transition={{ delay: 0.7 + idx * 0.1 }}
+                        className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-border/50 hover:border-primary/30 hover:bg-primary/5 transition-all"
+                      >
+                        <Icon className="h-5 w-5 text-primary shrink-0" />
+                        <span className="text-sm font-medium">{point.text}</span>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               </Card>
 
