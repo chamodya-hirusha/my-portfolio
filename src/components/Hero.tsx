@@ -102,10 +102,7 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="https://wa.me/94701529611" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
-                <FaWhatsapp className="h-5 w-5" />
-                </a>
+         
             </div>
           </div>
 
